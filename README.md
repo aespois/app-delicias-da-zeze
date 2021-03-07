@@ -1,2 +1,2 @@
-# app-delicias-da-zeze
+# APP Delícias da Zezé
 Projeto: Desenvolvimento Web com Java EE
