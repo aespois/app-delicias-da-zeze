@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.infnet.AppTP3AnaEspois.AppTp3AnaEspoisApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.6 s - in br.edu.infnet.AppTP3AnaEspois.AppTp3AnaEspoisApplicationTests

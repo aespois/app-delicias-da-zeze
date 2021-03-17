@@ -1,13 +1,13 @@
-package br.edu.infnet.appsdin;
+package br.edu.infnet.AppTP3AnaEspois;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppsdinApplication {
+public class AppTp3AnaEspoisApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppsdinApplication.class, args);
+		SpringApplication.run(AppTp3AnaEspoisApplication.class, args);
 	}
 
 }

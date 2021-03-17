@@ -1,11 +1,2 @@
-br\edu\infnet\appsdin\controller\AppController.class
-br\edu\infnet\appsdin\model\testes\PessoaTeste.class
-br\edu\infnet\appsdin\model\service\PessoaService.class
-br\edu\infnet\appsdin\aula01\AlunoTeste.class
-br\edu\infnet\appsdin\aula01\Aluno.class
-br\edu\infnet\appsdin\model\negocio\Pessoa.class
-br\edu\infnet\appsdin\AppsdinApplication.class
-br\edu\infnet\appsdin\aula01\AlunoMapa.class
-br\edu\infnet\appsdin\controller\PessoaController.class
-br\edu\infnet\appsdin\model\repository\PessoaRepository.class
-br\edu\infnet\appsdin\model\repository\IPessoaRepository.class
+br\edu\infnet\AppTP3AnaEspois\model\negocio\Usuario.class
+br\edu\infnet\AppTP3AnaEspois\AppTp3AnaEspoisApplication.class
