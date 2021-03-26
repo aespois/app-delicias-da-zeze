@@ -1,10 +1,10 @@
-package br.edu.infnet.AppTP3AnaEspois;
+package br.edu.infnet.AppDeliciasDaZeze;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AppTp3AnaEspoisApplicationTests {
+class AppDeliciasDaZezeApplicationTests {
 
 	@Test
 	void contextLoads() {

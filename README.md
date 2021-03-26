@@ -1,4 +1,28 @@
-# APP Delícias da Zezé
-Projeto: Desenvolvimento Web com Java EE
+APP DELICIAS DA ZEZE
 
-Entrega da etapa TP3 em 17/03/2021
+CLASSE DE ASSOCIAÇÃO
+Cliente | tela de login e cadastro
+- id
+- nome 
+- endereco
+- telefone
+- email
+- senha
+
+
+CLASSE PRINCIPAL
+Pedido | tela de cadastro
+- id
+- idCliente
+- idProduto
+- quantidade
+- dataEntrega 
+
+
+Produto | tela de cadastro
+- id
+- nome (Torta, SaladaDeFruta e Empada)
+- tipo (doce ou salgado)
+- recheio (camarão, frango, chocolate, morango, limão)
+- descricao
+- valorUnitario

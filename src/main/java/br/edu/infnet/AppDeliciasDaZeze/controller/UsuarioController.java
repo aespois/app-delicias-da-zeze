@@ -1,4 +1,4 @@
-package br.edu.infnet.AppTP3AnaEspois.controller;
+package br.edu.infnet.AppDeliciasDaZeze.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,24 +6,33 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
-import br.edu.infnet.AppTP3AnaEspois.model.negocio.Usuario;
-import br.edu.infnet.AppTP3AnaEspois.model.service.UsuarioService;
+import br.edu.infnet.AppDeliciasDaZeze.model.negocio.Usuario;
+import br.edu.infnet.AppDeliciasDaZeze.model.service.UsuarioService;
 
 @Controller
+@SessionAttributes("user")
 public class UsuarioController {
-	
+
 	@Autowired
 	private UsuarioService usuarioService;
 	
-	@GetMapping(value = "/")
-	public String iniciar(Model model) {
+	@PostMapping(value = "/usuario/login")
+	public String login(Model model, @RequestParam String email, @RequestParam String senha) {
 		
-		model.addAttribute("nome", "Ana Espois");
-		model.addAttribute("email", "ana.espois@al.infnet.edu.br");
-		model.addAttribute("git", "https://github.com/aespois/app-delicias-da-zeze");
+		Usuario usuario = usuarioService.autenticacao(email, senha);
 		
-		return "index";
+		if (usuario != null) {			
+			
+			model.addAttribute("user", usuario);
+			
+			return "redirect:/home";
+		}
+		
+		model.addAttribute("mensagem", "Autenticação inválida: " + email);
+		return "login";
 	}
 	
 	@GetMapping(value = "/usuario")
@@ -48,5 +57,4 @@ public class UsuarioController {
 		
 		return "redirect:/usuario";
 	}
-
 }

@@ -6,35 +6,30 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>App Delícias da Zezé | Usuário</title>
+<title>App Delícias da Zezé | Cliente</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 	<div class="container">
-		<h2>Usuários</h2>
+		<h2>Novo Cliente</h2>
 		
-		<form action="/usuario/incluir" method="post">
+		<form action="/cliente/incluir" method="post">
 		
 			<div class="form-group">			
-			<label>Informe seu nome</label>
+			<label>Nome Completo:</label>
 			<input type="text" class="form-control" name="nome">
-			</div>
-
-			<div class="form-group">			
-			<label>Informe seu e-mail</label>
-			<input type="email" class="form-control" name="email">
 			</div>
 			
 			<div class="form-group">			
-			<label>Informe seu Git</label>
-			<input type="text" class="form-control" name="git">
+			<label>Endereço:</label>
+			<input type="text" class="form-control" name="endereco">
 			</div>
-						
+			
 			<div class="form-group">			
-			<label>Informe sua senha</label>
-			<input type="password" class="form-control" name="senha">
+			<label>Telefone:</label>
+			<input type="text" class="form-control" name="telefone">
 			</div>
 
 			<button type="submit">Gravar</button>
@@ -42,39 +37,39 @@
 		
 		<br>
 
-		<form action="/" method="get">
+		<form action="/home">
 			<button type="submit">Voltar</button>	
 		</form>
 		
 		<br><br>
 			
-		<c:if test="${not empty usuarios}">
-			<p>Listagem de usuários cadastrados</p>            
+		<c:if test="${not empty clientes}">
+			<p>Listagem de clientes cadastrados</p>            
 			<table class="table table-striped">
 			  <thead>
 			    <tr>
 			      <th>Nome</th>
-			      <th>Email</th>
-			      <th>Git</th>
+			      <th>Endereço</th>
+			      <th>Telefone</th>
 			      <th></th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			  
-			  <c:forEach var="u" items="${usuarios}">
+			  <c:forEach var="c" items="${clientes}">
 			    <tr>
-			      <td>${u.nome}</td>
-			      <td>${u.email}</td>
-			      <td>${u.git}</td>
-			      <td><a href="/usuario/${u.id}/excluir"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+			      <td>${c.nome}</td>
+			      <td>${c.endereco}</td>
+			      <td>${c.telefone}</td>
+			      <td><a href="/cliente/${c.id}/excluir"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
 			    </tr>
 			  </c:forEach>
 			  </tbody>
 			</table>	
 		</c:if>
 		
-		<c:if test="${empty usuarios}">
-			<p>Nenhum usuário cadastrado!</p>
+		<c:if test="${empty clientes}">
+			<p>Nenhum cliente cadastrado!</p>
 		</c:if>
 		
 	</div>

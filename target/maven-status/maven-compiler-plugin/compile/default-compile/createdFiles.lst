@@ -1,2 +1,14 @@
-br\edu\infnet\AppTP3AnaEspois\model\negocio\Usuario.class
-br\edu\infnet\AppTP3AnaEspois\AppTp3AnaEspoisApplication.class
+br\edu\infnet\AppDeliciasDaZeze\controller\ClienteController.class
+br\edu\infnet\AppDeliciasDaZeze\model\service\ClienteService.class
+br\edu\infnet\AppDeliciasDaZeze\model\service\PedidoService.class
+br\edu\infnet\AppDeliciasDaZeze\controller\UsuarioController.class
+br\edu\infnet\AppDeliciasDaZeze\model\repository\IPedidoRepository.class
+br\edu\infnet\AppDeliciasDaZeze\controller\PedidoController.class
+br\edu\infnet\AppDeliciasDaZeze\controller\AcessoController.class
+br\edu\infnet\AppDeliciasDaZeze\model\negocio\Pedido.class
+br\edu\infnet\AppDeliciasDaZeze\model\repository\IClienteRepository.class
+br\edu\infnet\AppDeliciasDaZeze\AppDeliciasDaZezeApplication.class
+br\edu\infnet\AppDeliciasDaZeze\model\service\UsuarioService.class
+br\edu\infnet\AppDeliciasDaZeze\model\negocio\Usuario.class
+br\edu\infnet\AppDeliciasDaZeze\model\repository\IUsuarioRepository.class
+br\edu\infnet\AppDeliciasDaZeze\model\negocio\Cliente.class

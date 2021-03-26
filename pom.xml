@@ -5,19 +5,18 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.3</version>
+		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.edu.infnet</groupId>
-	<artifactId>AppTP3AnaEspois</artifactId>
+	<artifactId>AppDeliciasDaZeze</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AppTP3AnaEspois</name>
-	<description>App TP3 Ana Espois</description>
+	<name>AppDeliciasDaZeze</name>
+	<description>AT de Desenvolvimento Java Web</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-	<dependencies>
-	
+		<dependencies>
 		<!-- https://mvnrepository.com/artifact/taglibs/standard -->
 		<dependency>
 		    <groupId>taglibs</groupId>
@@ -61,7 +60,7 @@
 		    <artifactId>tomcat-embed-jasper</artifactId>
 		    <scope>provided</scope>
 		</dependency>
-	
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

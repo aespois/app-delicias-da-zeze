@@ -1,4 +1,4 @@
-package br.edu.infnet.AppTP3AnaEspois.model.negocio;
+package br.edu.infnet.AppDeliciasDaZeze.model.negocio;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,15 +7,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TUsuario")
-public class Usuario {
+@Table(name = "TCliente")
+public class Cliente {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String nome;
-	private String email;
-	private String senha;
+	private String nome; 
+	private String endereco;
+	private String telefone;
 	
 	public int getId() {
 		return id;
@@ -33,21 +33,21 @@ public class Usuario {
 		this.nome = nome;
 	}
 	
-	public String getEmail() {
-		return email;
+	public String getEndereco() {
+		return endereco;
 	}
 	
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	
-	public String getSenha() {
-		return senha;
+	public String getTelefone() {
+		return telefone;
 	}
 	
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
 	}
 	
-	
+
 }
