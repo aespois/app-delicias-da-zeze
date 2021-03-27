@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>App Delícias da Zezé | Pedido</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,37 +17,37 @@
 		
 		<form action="/pedido/incluir" method="post">
 		
-			<div class="form-group">			
-			<label>Escolha o Cliente:</label><br>
-			<select class="form-group" name="cliente.id">			
-				<c:forEach var="c" items="${clientes}">
-					<option value="${c.id}">${c.nome}</option>							
-				</c:forEach>
-			</select>			
+			<div class="form-row">
+				<div class="form-group col-md-12">			
+				<label>Cliente</label><br>
+				<select class="form-group" name="cliente.id">			
+					<c:forEach var="c" items="${clientes}">
+						<option value="${c.id}">${c.nome}</option>							
+					</c:forEach>
+				</select>			
+				</div>
 			</div>
-		
-			<div class="form-group">			
-			<label>Escolha o Produto:</label>
-			<input type="text" class="form-control" name="nomeProduto">
+	
+			<div class="form-row">			
+				<div class="form-group col-md-6">				
+				<label>Produto</label>
+				<input type="text" class="form-control" name="nomeProduto">
+				</div>
+			
+				<div class="form-group col-md-2">				
+				<label>Quantidade</label>
+				<input type="number" class="form-control" name="quantidade">
+				</div>
+							
+				<div class="form-group col-md-4">				
+				<label>Data da Entrega</label>
+				<input type="datetime-local" class="form-control" name="dataEntrega">
+				</div>
 			</div>
 
-			<div class="form-group">			
-			<label>Digite a Quantidade:</label>
-			<input type="number" class="form-control" name="quantidade">
-			</div>
-						
-			<div class="form-group">			
-			<label>Informe a Data para Entrega:</label>
-			<input type="datetime-local" class="form-control" name="dataEntrega">
-			</div>
-
-			<button type="submit">Gravar</button>
-		</form>
-		
-		<br>
-
-		<form action="/home">
-			<button type="submit">Voltar</button>	
+			<button type="submit" class="btn btn-success">Gravar</button>
+			<button type="reset" class="btn btn-outline-primary" onclick="location.href='/home'">Voltar</button>	
+			
 		</form>
 		
 		<br><br>
@@ -83,6 +83,11 @@
 		<c:if test="${empty pedidos}">
 			<p>Nenhum pedido cadastrado!</p>
 		</c:if>
+		
+		<footer>
+          <hr class="my-4">
+          <p style="font-size: smaller" align="center">Delícias da Zezé® - Todos os direitos reservados</p>
+      	</footer>  
 		
 	</div>
 

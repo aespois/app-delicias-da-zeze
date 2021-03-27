@@ -1,28 +1,26 @@
 APP DELICIAS DA ZEZE
 
+Usuário | tela de cadastro e login
+- id
+- nome
+- email
+- git
+- senha
+
+
 CLASSE DE ASSOCIAÇÃO
-Cliente | tela de login e cadastro
+Cliente | tela de cadastro
 - id
 - nome 
 - endereco
 - telefone
-- email
-- senha
 
 
 CLASSE PRINCIPAL
 Pedido | tela de cadastro
 - id
 - idCliente
-- idProduto
+- idUsuario
+- nomeProduto
 - quantidade
 - dataEntrega 
-
-
-Produto | tela de cadastro
-- id
-- nome (Torta, SaladaDeFruta e Empada)
-- tipo (doce ou salgado)
-- recheio (camarão, frango, chocolate, morango, limão)
-- descricao
-- valorUnitario
