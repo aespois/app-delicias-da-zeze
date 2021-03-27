@@ -68,9 +68,11 @@
 			</table>	
 		</c:if>
 		
-		<c:if test="${empty clientes}">
-			<p>Nenhum cliente cadastrado!</p>
-		</c:if>
+		<c:if test="${not empty mensagem}">
+            <div class="alert alert-danger">
+		    	<strong>Atenção!</strong> ${mensagem}
+		  	</div>
+	  	</c:if>	
 		
 	</div>
 
