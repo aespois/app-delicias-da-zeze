@@ -13,13 +13,13 @@ public class ClienteService {
 	
 	@Autowired
 	private IClienteRepository clienteRepository;
-
-	public List<Cliente> obterLista(Usuario usuario) {
-		return (List<Cliente>)clienteRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome"));
-	}
 	
 	public List<Cliente> obterLista() {
 		return (List<Cliente>)clienteRepository.findAll();
+	}
+
+	public List<Cliente> obterLista(Usuario usuario) {
+		return (List<Cliente>)clienteRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome"));
 	}
 	
 	public void incluir(Cliente cliente) {				

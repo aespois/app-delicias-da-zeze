@@ -2,6 +2,8 @@ package br.edu.infnet.AppDeliciasDaZeze.model.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 import br.edu.infnet.AppDeliciasDaZeze.model.negocio.Usuario;
 import br.edu.infnet.AppDeliciasDaZeze.model.repository.IUsuarioRepository;
@@ -22,6 +24,10 @@ public class UsuarioService {
 	
 	public List<Usuario> obterLista() {
 		return (List<Usuario>)usuarioRepository.findAll();
+	}
+	
+	public List<Usuario> obterLista(String nome) {
+		return (List<Usuario>)usuarioRepository.obterLista(nome, Sort.by(Direction.ASC, "nome"));
 	}
 
 	public void excluir(Integer id) {

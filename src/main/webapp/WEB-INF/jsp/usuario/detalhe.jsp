@@ -76,6 +76,12 @@
 			<p>Nenhum usuário cadastrado!</p>
 		</c:if>
 		
+		<c:if test="${not empty mensagem}">
+            <div class="alert alert-danger">
+		    	<strong>Atenção!</strong> ${mensagem}
+		  	</div>
+	  	</c:if>	
+		
 		<footer>
           <hr class="my-4">
           <p style="font-size: smaller" align="center">Delícias da Zezé® - Todos os direitos reservados</p>

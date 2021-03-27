@@ -13,14 +13,14 @@ public class PedidoService {
 	
 	@Autowired
 	private IPedidoRepository pedidoRepository;
-		
-	public List<Pedido> obterLista(Usuario usuario) {
-		return (List<Pedido>)pedidoRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nomeProduto"));
-	}
 	
 	public List<Pedido> obterLista() {
 		return (List<Pedido>)pedidoRepository.findAll();
 	}
+		
+	public List<Pedido> obterLista(Usuario usuario) {
+		return (List<Pedido>)pedidoRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nomeProduto"));
+	}	
 	
 	public void incluir(Pedido pedido) {				
 		pedidoRepository.save(pedido);

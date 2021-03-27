@@ -36,7 +36,7 @@ public class UsuarioController {
 	}
 	
 	@GetMapping(value = "/usuario")
-	public String cadastrar(Model model) {
+	public String cadastrar(Model model) { // colocar o ajusta de ordenacao aqui ver clienteservice
 		
 		model.addAttribute("usuarios", usuarioService.obterLista());
 		
@@ -51,9 +51,18 @@ public class UsuarioController {
 	}
 	
 	@GetMapping(value = "/usuario/{id}/excluir")
-	public String excluir(@PathVariable Integer id) {
+	public String excluir(Model model, @PathVariable Integer id) {
 		
-		usuarioService.excluir(id);
+		try {
+			usuarioService.excluir(id);
+			
+		} catch (Exception e) {
+
+			model.addAttribute("usuarios", usuarioService.obterLista());
+			model.addAttribute("mensagem", "Impossível excluir o usuário pois há pedidos e/ou clientes vinculados ao mesmo: " + e.getMessage());
+			return cadastrar(model);
+		}
+		
 		
 		return "redirect:/usuario";
 	}

@@ -1,14 +1,14 @@
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\negocio\Usuario.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\service\ClienteService.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\service\PedidoService.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\negocio\Pedido.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\negocio\Cliente.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\AcessoController.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\PedidoController.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\repository\IUsuarioRepository.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\UsuarioController.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\AppDeliciasDaZezeApplication.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\repository\IClienteRepository.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\ClienteController.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\service\UsuarioService.java
-C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\repository\IPedidoRepository.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\service\ClienteService.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\service\PedidoService.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\repository\IPedidoRepository.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\UsuarioController.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\negocio\Pedido.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\ClienteController.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\PedidoController.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\negocio\Usuario.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\controller\AcessoController.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\AppDeliciasDaZezeApplication.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\repository\IClienteRepository.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\service\UsuarioService.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\negocio\Cliente.java
+C:\Users\ana.espois\Infnet\Desenvolvimento Web Java EE\Eclipse Projects\app-delicias-da-zeze\src\main\java\br\edu\infnet\AppDeliciasDaZeze\model\repository\IUsuarioRepository.java
