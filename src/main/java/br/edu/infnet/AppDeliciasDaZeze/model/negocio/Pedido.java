@@ -24,6 +24,7 @@ public class Pedido {
 	@OneToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name = "idCliente")
 	private Cliente cliente;	
+	
 	@ManyToOne
 	@JoinColumn(name = "idUsuario")
 	private Usuario usuario;

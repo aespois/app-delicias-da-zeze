@@ -22,11 +22,12 @@ public class PedidoController {
 	@Autowired
 	private ClienteService clienteService;
 	
+	
 	@GetMapping(value = "/pedido")
 	public String cadastrar(Model model, @SessionAttribute("user") Usuario usuario) {
 		
 		model.addAttribute("pedidos", pedidoService.obterLista(usuario));
-		model.addAttribute("clientes", clienteService.obterLista());
+		model.addAttribute("clientes", clienteService.obterLista(usuario));
 		
 		return "pedido/detalhe";
 	}

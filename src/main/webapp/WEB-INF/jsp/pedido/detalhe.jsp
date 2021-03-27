@@ -18,9 +18,9 @@
 		<form action="/pedido/incluir" method="post">
 		
 			<div class="form-row">
-				<div class="form-group col-md-12">			
+				<div class="form-group col-md-4">			
 				<label>Cliente</label><br>
-				<select class="form-group" name="cliente.id">			
+				<select class="form-group col-md-6" name="cliente.id">			
 					<c:forEach var="c" items="${clientes}">
 						<option value="${c.id}">${c.nome}</option>							
 					</c:forEach>
