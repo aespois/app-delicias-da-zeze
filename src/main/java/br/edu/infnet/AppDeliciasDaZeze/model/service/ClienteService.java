@@ -29,6 +29,4 @@ public class ClienteService {
 	public void excluir(Integer id) {
 		clienteRepository.deleteById(id);		
 	}
-	
-
 }

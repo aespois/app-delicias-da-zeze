@@ -29,5 +29,4 @@ public class PedidoService {
 	public void excluir(Integer id) {
 		pedidoRepository.deleteById(id);		
 	}
-
 }

@@ -22,8 +22,7 @@ public class ClienteController {
 	@GetMapping(value = "/cliente")
 	public String cadastrar(Model model, @SessionAttribute("user") Usuario usuario) {
 		
-		model.addAttribute("clientes", clienteService.obterLista(usuario));
-		
+		model.addAttribute("clientes", clienteService.obterLista(usuario));		
 		return "cliente/detalhe";
 	}
 	
@@ -42,13 +41,11 @@ public class ClienteController {
 		try {
 			clienteService.excluir(id);
 			
-		} catch (Exception e) {
-			
+		} catch (Exception e) {			
 			model.addAttribute("clientes", clienteService.obterLista(usuario));
 			model.addAttribute("mensagem", "Impossível excluir o cliente pois há pedidos vinculados ao mesmo: " + e.getMessage());
 			return cadastrar(model, usuario);
-		}
-				
+		}				
 		return "redirect:/cliente";
 	}
 }

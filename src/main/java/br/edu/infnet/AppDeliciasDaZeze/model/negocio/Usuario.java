@@ -1,7 +1,6 @@
 package br.edu.infnet.AppDeliciasDaZeze.model.negocio;
 
 import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -72,7 +71,5 @@ public class Usuario {
 
 	public void setGit(String git) {
 		this.git = git;
-	}
-	
-	
+	}	
 }

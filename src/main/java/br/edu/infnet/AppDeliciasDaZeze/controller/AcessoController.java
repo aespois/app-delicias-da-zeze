@@ -15,5 +15,4 @@ public class AcessoController {
 	public String home() {		
 		return "index";
 	}
-
 }

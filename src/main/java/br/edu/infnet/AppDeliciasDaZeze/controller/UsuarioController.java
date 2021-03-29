@@ -24,22 +24,18 @@ public class UsuarioController {
 		
 		Usuario usuario = usuarioService.autenticacao(email, senha);
 		
-		if (usuario != null) {			
-			
-			model.addAttribute("user", usuario);
-			
+		if (usuario != null) {
+			model.addAttribute("user", usuario);			
 			return "redirect:/home";
-		}
-		
+		}		
 		model.addAttribute("mensagem", "Autenticação inválida: " + email);
 		return "login";
 	}
 	
 	@GetMapping(value = "/usuario")
-	public String cadastrar(Model model) { // colocar o ajusta de ordenacao aqui ver clienteservice
+	public String cadastrar(Model model) {
 		
-		model.addAttribute("usuarios", usuarioService.obterLista());
-		
+		model.addAttribute("usuarios", usuarioService.obterLista());		
 		return "usuario/detalhe";
 	}
 	
@@ -57,13 +53,10 @@ public class UsuarioController {
 			usuarioService.excluir(id);
 			
 		} catch (Exception e) {
-
 			model.addAttribute("usuarios", usuarioService.obterLista());
 			model.addAttribute("mensagem", "Impossível excluir o usuário pois há pedidos e/ou clientes vinculados ao mesmo: " + e.getMessage());
 			return cadastrar(model);
-		}
-		
-		
+		}		
 		return "redirect:/usuario";
 	}
 }

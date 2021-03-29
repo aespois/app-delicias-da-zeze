@@ -12,5 +12,4 @@ public interface IPedidoRepository extends CrudRepository<Pedido, Integer>{
 	
 	@Query("from Pedido p where p.usuario.id=:id")
 	List<Pedido> obterLista(Integer id, Sort by);
-
 }

@@ -20,15 +20,13 @@ public class PedidoController {
 	private PedidoService pedidoService;
 	
 	@Autowired
-	private ClienteService clienteService;
-	
+	private ClienteService clienteService;	
 	
 	@GetMapping(value = "/pedido")
 	public String cadastrar(Model model, @SessionAttribute("user") Usuario usuario) {
 		
 		model.addAttribute("pedidos", pedidoService.obterLista(usuario));
-		model.addAttribute("clientes", clienteService.obterLista(usuario));
-		
+		model.addAttribute("clientes", clienteService.obterLista(usuario));		
 		return "pedido/detalhe";
 	}
 	
@@ -43,9 +41,7 @@ public class PedidoController {
 	@GetMapping(value = "/pedido/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
-		pedidoService.excluir(id);
-		
+		pedidoService.excluir(id);		
 		return "redirect:/pedido";
 	}
-
 }

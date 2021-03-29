@@ -19,36 +19,31 @@
 </script>
 </head>
 <body>
-
 	<div class="container">
-		<h2>Novo Cliente</h2>
-		
-		<form action="/cliente/incluir" method="post">
-		
-		<div class="form-row">	
-			<div class="form-group col-md-6">			
-			<label>Nome</label>
-			<input type="text" class="form-control" name="nome">
-			</div>
-			
-			<div class="form-group col-md-4">			
-			<label>Endereço</label>
-			<input type="text" class="form-control" name="endereco">
-			</div>
-			
-			<div class="form-group col-md-2">			
-			<label>Telefone</label>
-			<input type="text" id="inputPhone" class="form-control" name="telefone">
-			</div>
-		</div>
+		<h2>Novo Cliente</h2>		
+		<form action="/cliente/incluir" method="post">		
+			<div class="form-row">	
+				<div class="form-group col-md-6">			
+				<label>Nome</label>
+				<input type="text" class="form-control" name="nome">
+				</div>
+				
+				<div class="form-group col-md-4">			
+				<label>Endereço</label>
+				<input type="text" class="form-control" name="endereco">
+				</div>
+				
+				<div class="form-group col-md-2">			
+				<label>Telefone</label>
+				<input type="text" id="inputPhone" class="form-control" name="telefone">
+				</div>
+			</div>			
 			
 			<button type="submit" class="btn btn-success">Gravar</button>
 			<button type="reset" class="btn btn-outline-primary" onclick="location.href='/home'">Voltar</button>
-
-		</form>
-			
-		<br><br>
-			
+		</form>			
+		<br><br>	
+				
 		<c:if test="${not empty clientes}">
 			<p>Listagem de clientes cadastrados</p>            
 			<table class="table table-striped">

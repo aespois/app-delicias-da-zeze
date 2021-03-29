@@ -11,40 +11,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
 	<div class="container">
-		<h2>Novo Usuário</h2>
-		
-		<form action="/usuario/incluir" method="post">
-		
-		<div class="form-row">
-			<div class="form-group col-md-6">			
-			<label>Nome</label>
-			<input type="text" class="form-control" name="nome">
+		<h2>Novo Usuário</h2>		
+		<form action="/usuario/incluir" method="post">		
+			<div class="form-row">
+				<div class="form-group col-md-6">			
+				<label>Nome</label>
+				<input type="text" class="form-control" name="nome">
+				</div>
+	
+				<div class="form-group col-md-6">			
+				<label>E-mail</label>
+				<input type="email" class="form-control" name="email">
+				</div>
 			</div>
-
-			<div class="form-group col-md-6">			
-			<label>E-mail</label>
-			<input type="email" class="form-control" name="email">
+				
+			<div class="form-row">
+				<div class="form-group col-md-6">			
+				<label>Link do Git</label>
+				<input type="text" class="form-control" name="git">
+				</div>
+							
+				<div class="form-group col-md-6">			
+				<label>Senha</label>
+				<input type="password" class="form-control" name="senha">
+				</div>
 			</div>
-		</div>
-			
-		<div class="form-row">
-			<div class="form-group col-md-6">			
-			<label>Link do Git</label>
-			<input type="text" class="form-control" name="git">
-			</div>
-						
-			<div class="form-group col-md-6">			
-			<label>Senha</label>
-			<input type="password" class="form-control" name="senha">
-			</div>
-		</div>
 
 			<button type="submit" class="btn btn-success">Gravar</button>
 			<button type="reset" class="btn btn-outline-primary" onclick="location.href='/'">Voltar</button>	
-		</form>
-		
+		</form>		
 		<br><br>
 			
 		<c:if test="${not empty usuarios}">

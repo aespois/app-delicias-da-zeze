@@ -11,8 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="container">  
-	
+	<div class="container">  	
 		<div class="jumbotron">
             <h1 class="display-4">App Delícias da Zezé</h1>
             <p class="lead">As maiores delícias de Saquarema agora na sua casa!</p><hr class="my-4">
@@ -43,7 +42,6 @@
 				    	<strong>Atenção!</strong> ${mensagem}
 				  	</div>
 			  	</c:if>			  	
-			  	
 	       </div>
 		</div>
 		

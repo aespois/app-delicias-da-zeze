@@ -11,12 +11,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
 	<div class="container">
-		<h2>Novo Pedido</h2>
-		
-		<form action="/pedido/incluir" method="post">
-		
+		<h2>Novo Pedido</h2>		
+		<form action="/pedido/incluir" method="post">		
 			<div class="form-row">
 				<div class="form-group col-md-4">			
 				<label>Cliente</label><br>
@@ -46,10 +43,8 @@
 			</div>
 
 			<button type="submit" class="btn btn-success">Gravar</button>
-			<button type="reset" class="btn btn-outline-primary" onclick="location.href='/home'">Voltar</button>	
-			
-		</form>
-		
+			<button type="reset" class="btn btn-outline-primary" onclick="location.href='/home'">Voltar</button>				
+		</form>		
 		<br><br>
 			
 		<c:if test="${not empty pedidos}">
